@@ -42,6 +42,22 @@ body {
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.callback-inner.hide {
+  display: none;
+}
+.success-block {
+display: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.95;
+}
+label#phone-error {
+  position: absolute;
+  color: #e86a6a;
+  font-size: 13px;
+  left: 30px;
+  bottom: -20px;
+}
 .callback__form {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -506,6 +506,7 @@
           </button>
         </form>
       </div>
+      <div class="success-block">Thanks for reaching out! Expect a call in a few.</div>
     </div>
 
 <!-- <script src="https://gist.github.com/romkolisnyk/4c640792963dbbc21b180406a5c5459e.js"></script> -->
@@ -588,64 +589,63 @@
 
 
 
-      // jQuery.validator.addMethod("phoneno", function (phone_number, element) {
-      //   phone_number = phone_number.replace(/\s+/, "");
-      //   return this.optional(element) || phone_number.length > 9 &&
-      //     phone_number.match(/^((\+[0-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/);
-      // }, "Please enter a valid number");
+      jQuery.validator.addMethod("phone", function (phone_number, element) {
+        phone_number = phone_number.replace(/\s+/, "");
+        return this.optional(element) || phone_number.length > 9 &&
+          phone_number.match(/^((\+[0-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/);
+      }, "Please enter a valid number");
 
-      var callbackForm = $("#callbackForm");
-      // callbackForm.validate({
-      //   submitHandler: function (form) {
-      //     return false;
-      //   },
-      //   errorContainer: $("div.form-error"),
-      //   errorLabelContainer: $("ol", $("div.form-error")),
-      //   wrapper: 'li',
-      //   errorClass: 'validation-error',
-      //   rules: {
-      //     phone: {
-      //       required: true,
-      //       phoneno: true,
-      //       minlength: 2,
-      //       maxlength: 20
+      var callbackForm = $("#callback__form");
+      callbackForm.validate({
+        submitHandler: function (form) {
+          return false;
+        },
+        errorContainer: $("div.form-error"),
+        errorLabelContainer: $("ol", $("div.form-error")),
+        // wrapper: 'li',
+        errorClass: 'validation-error',
+        rules: {
+          phone: {
+            required: true,
+            phone: true,
+            minlength: 2,
+            maxlength: 20
 
-      //     }
-      //   },
-      //   messages: {
+          }
+        },
+        messages: {
 
-      //     phone: {
-      //       required: 'Please enter your phone number',
-      //       maxlength: 'Please enter your name'
-      //     }
-      //   }
-      // });
+          phone: {
+            required: 'Please enter your phone number',
+            maxlength: 'Please enter your name'
+          }
+        }
+      });
 
       $("#callback").click(function () {
-        // if (callbackForm.valid()) {
+        if (callbackForm.valid()) {
           callbackSubmit();
-        // }
+        }
       });
 
       function callbackSubmit() {
-        $(".loading").html("<div class='inner'><p class='p'>Thanks for reaching out! Expect a call in a few.</p></div>");
+        $(".callback-inner").addClass("hide");
+        $(".loading").html("<div class='inner'><p class='success'>Thanks for reaching out! Expect a call in a few.</p></div>");
         //$(".status").html("");
         $(".success-block").fadeIn();
-        var username = $("#username").val(),
-          phone = $("#phone").val(),
+        var phone = $("#phone").val(),
           postData = {
             "phone": phone,
-            "username": username
           };
         $.post('/manage/ajaxfunc.php?f=callback', postData, function (j) {
           if (j.status == 1) {
-            $(".loading").html("<p class='p'>Thanks for reaching out! Expect a call in a few.</p>");
+            $(".loading").html("<p class='success'>Thanks for reaching out! Expect a call in a few.</p>");
             //$(".status").html(j.txt);
             callbackForm[0].reset();
             window.parent.$("#myModal").modal('hide');
           }
           else {
-            $(".loading").html("<p class='p'>Thanks for reaching out! Expect a call in a few.</p>");
+            $(".loading").html("<p class='success'>Thanks for reaching out! Expect a call in a few.</p>");
             //$(".status").html(j.txt);
           }
         }, 'json');
