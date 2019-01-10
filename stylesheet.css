@@ -20,20 +20,28 @@ body {
   padding: 20px 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 .callback-inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -1256,4 +1264,25 @@ label#phone-error {
 }
 .iti-flag {
   margin-right: 10px;
+}
+
+@media screen and (max-width:725px) {
+  .callback {
+    padding: 10px;
+  }
+  .callback-inner .callback__label {
+    font-size: 16px;
+  }
+  .callback__form {
+    margin-top: 5px;
+  }
+
+  .callback__form input {
+  padding: 8px 10px 8px 50px;
+  font-size: 12px;
+  }
+  .callback__form .callback__button {
+    padding: 9px;
+    font-size: 13px;
+  }
 }
