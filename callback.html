@@ -100,7 +100,7 @@
                 <div class="iti-flag KH"></div>Cambodia<span class="hidden mask">+855-##-###-###</span>
               </li><li>
                 <div class="iti-flag CM"></div>Cameroon<span class="hidden mask">+237-####-####</span>
-              </li><li>
+              </li><li id="can">
                 <div class="iti-flag CA"></div>Canada<span class="hidden mask">+1(###)###-####</span>
               </li><li>
                 <div class="iti-flag CV"></div>Cape Verde<span class="hidden mask">+238(###)##-##</span>
@@ -473,7 +473,7 @@
               </li><li>
                 <div class="iti-flag AE"></div>United Arab Emirates<span class="hidden mask">+971-#-###-####</span>
               </li><li>
-                <div class="iti-flag UK"></div>United Kingdom<span class="hidden mask">+44-##-####-####</span>
+                <div class="iti-flag GB"></div>United Kingdom<span class="hidden mask">+44-##-####-####</span>
               </li><li>
                 <div class="iti-flag UY"></div>Uruguay<span class="hidden mask">+598-#-###-##-##</span>
               </li><li>
@@ -575,8 +575,13 @@
             }, "jsonp");
 
         $(".callback-flag").click(function(){
-            $(".phones-list").slideToggle();
+            $(".phones-list").slideToggle("fast");
         });
+
+        $("#can").click(function(){
+            $("#descr").attr('class', 'iti-flag CA');
+        });
+        
 
         
     $(function () {
