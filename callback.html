@@ -509,7 +509,6 @@
       <div class="success-block">Thanks for reaching out! Expect a call in a few.</div>
     </div>
 
-<!-- <script src="https://gist.github.com/romkolisnyk/4c640792963dbbc21b180406a5c5459e.js"></script> -->
 <script src="script.js"></script>
 
     <script>
@@ -548,19 +547,9 @@
                 },
             };
 
-    // $('.phones-list li:not(span)').sort(function (a, b) {
-    //   if (a.textContent < b.textContent) {
-    //     return -1;
-    //   } else {
-    //     return 1;
-    //   }
-    // }).appendTo('.asd');
-
     $(".phones-list li").click(function (maskObj) {
       var mask = $(this).find(".mask").html();
       $("#phone").val(mask);
-      // $(this).find(".iti-flag").toggleClass('bbb aaa');
-      // $("#descr").toggleClass($(this).find(".iti-flag").attr("class"))
     });
             $('#phone_mask').change(function() {
                     $('#phone').inputmask("remove");
@@ -586,9 +575,6 @@
 
         
     $(function () {
-
-
-
       jQuery.validator.addMethod("phone", function (phone_number, element) {
         phone_number = phone_number.replace(/\s+/, "");
         return this.optional(element) || phone_number.length > 9 &&
@@ -602,7 +588,6 @@
         },
         errorContainer: $("div.form-error"),
         errorLabelContainer: $("ol", $("div.form-error")),
-        // wrapper: 'li',
         errorClass: 'validation-error',
         rules: {
           phone: {
@@ -631,7 +616,6 @@
       function callbackSubmit() {
         $(".callback-inner").addClass("hide");
         $(".loading").html("<div class='inner'><p class='success'>Thanks for reaching out! Expect a call in a few.</p></div>");
-        //$(".status").html("");
         $(".success-block").fadeIn();
         var phone = $("#phone").val(),
           postData = {
@@ -640,13 +624,11 @@
         $.post('/manage/ajaxfunc.php?f=callback', postData, function (j) {
           if (j.status == 1) {
             $(".loading").html("<p class='success'>Thanks for reaching out! Expect a call in a few.</p>");
-            //$(".status").html(j.txt);
             callbackForm[0].reset();
             window.parent.$("#myModal").modal('hide');
           }
           else {
             $(".loading").html("<p class='success'>Thanks for reaching out! Expect a call in a few.</p>");
-            //$(".status").html(j.txt);
           }
         }, 'json');
       }
@@ -655,6 +637,5 @@
       });
       
     </script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script> -->
   </body>
 </html>
