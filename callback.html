@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+
+  <body>
+    <div class="callback">
+      <div class="callback-inner">
+        <img src="https://7vpjpafj8h4g.s3.eu-central-1.amazonaws.com/images/256a835396fe170ce85a190871de3955.png" alt="" />
+        <p class="callback__label">
+          Get a call back in <span>5 minutes</span> or less
+        </p>
+        <form id="callback__form" class="callback__form">
+          <input class="form-control" type="tel" name="phone" id="phone" />
+          <input type="checkbox" id="phone_mask" checked="" style="display:none">
+          <div class="callback-flag">
+          <div id="descr" for="phone_mask"></div>
+          <div id="arrow-down"></div>
+          <div id="dropdown">
+            <ul class="phones-list">
+              <li>
+                <div class="iti-flag AF"></div>Afghanistan<span class="hidden mask">+93-##-###-####</span>
+              </li><li>
+                <div class="iti-flag AL"></div>Albania<span class="hidden mask">+355(###)###-###</span>
+              </li><li>
+                <div class="iti-flag DZ"></div>Algeria<span class="hidden mask">+213-##-###-####</span>
+              </li><li>
+                <div class="iti-flag AS"></div>American Samoa<span class="hidden mask">+1(684)###-####</span>
+              </li><li>
+                <div class="iti-flag AD"></div>Andorra<span class="hidden mask">+376-###-###</span>
+              </li><li>
+                <div class="iti-flag AO"></div>Angola<span class="hidden mask">+244(###)###-###</span>
+              </li><li>
+                <div class="iti-flag AI"></div>Anguilla<span class="hidden mask">+1(264)###-####</span>
+              </li><li>
+                <div class="iti-flag AG"></div>Antigua &amp; Barbuda<span class="hidden mask">+1(268)###-####</span>
+              </li><li>
+                <div class="iti-flag AR"></div>Argentina<span class="hidden mask">+54(###)###-####</span>
+              </li><li>
+                <div class="iti-flag AM"></div>Armenia<span class="hidden mask">+374-##-###-###</span>
+              </li><li>
+                <div class="iti-flag AW"></div>Aruba<span class="hidden mask">+297-###-####</span>
+              </li><li>
+                <div class="iti-flag AC"></div>Ascension<span class="hidden mask">+247-####</span>
+              </li><li>
+                <div class="iti-flag AU"></div>Australia<span class="hidden mask">+61-#-####-####</span>
+              </li><li>
+                <div class="iti-flag AQ"></div>Australian bases in Antarctica<span class="hidden mask">+672-1##-###</span>
+              </li><li>
+                <div class="iti-flag AT"></div>Austria<span class="hidden mask">+43(###)###-####</span>
+              </li><li>
+                <div class="iti-flag AZ"></div>Azerbaijan<span class="hidden mask">+994-##-###-##-##</span>
+              </li><li>
+                <div class="iti-flag BS"></div>Bahamas<span class="hidden mask">+1(242)###-####</span>
+              </li><li>
+                <div class="iti-flag BH"></div>Bahrain<span class="hidden mask">+973-####-####</span>
+              </li><li>
+                <div class="iti-flag BD"></div>Bangladesh<span class="hidden mask">+880-##-###-###</span>
+              </li><li>
+                <div class="iti-flag BB"></div>Barbados<span class="hidden mask">+1(246)###-####</span>
+              </li><li>
+                <div class="iti-flag BY"></div>Belarus<span class="hidden mask">+375(##)###-##-##</span>
+              </li><li>
+                <div class="iti-flag BE"></div>Belgium<span class="hidden mask">+32(###)###-###</span>
+              </li><li>
+                <div class="iti-flag BZ"></div>Belize<span class="hidden mask">+501-###-####</span>
+              </li><li>
+                <div class="iti-flag BJ"></div>Benin<span class="hidden mask">+229-##-##-####</span>
+              </li><li>
+                <div class="iti-flag BM"></div>Bermuda<span class="hidden mask">+1(441)###-####</span>
+              </li><li>
+                <div class="iti-flag BT"></div>Bhutan<span class="hidden mask">+975-#-###-###</span>
+              </li><li>
+                <div class="iti-flag BO"></div>Bolivia<span class="hidden mask">+591-#-###-####</span>
+              </li><li>
+                <div class="iti-flag BA"></div>Bosnia and Herzegovina<span class="hidden mask">+387-##-####</span>
+              </li><li>
+                <div class="iti-flag BW"></div>Botswana<span class="hidden mask">+267-##-###-###</span>
+              </li><li>
+                <div class="iti-flag BR"></div>Brazil<span class="hidden mask">+55(##)####-####</span>
+              </li><li>
+                <div class="iti-flag VG"></div>British Virgin Islands<span class="hidden mask">+1(284)###-####</span>
+              </li><li>
+                <div class="iti-flag BN"></div>Brunei Darussalam<span class="hidden mask">+673-###-####</span>
+              </li><li>
+                <div class="iti-flag BG"></div>Bulgaria<span class="hidden mask">+359(###)###-###</span>
+              </li><li>
+                <div class="iti-flag BF"></div>Burkina Faso<span class="hidden mask">+226-##-##-####</span>
+              </li><li>
+                <div class="iti-flag MM"></div>Burma (Myanmar)<span class="hidden mask">+95-###-###</span>
+              </li><li>
+                <div class="iti-flag BI"></div>Burundi<span class="hidden mask">+257-##-##-####</span>
+              </li><li>
+                <div class="iti-flag KH"></div>Cambodia<span class="hidden mask">+855-##-###-###</span>
+              </li><li>
+                <div class="iti-flag CM"></div>Cameroon<span class="hidden mask">+237-####-####</span>
+              </li><li>
+                <div class="iti-flag CA"></div>Canada<span class="hidden mask">+1(###)###-####</span>
+              </li><li>
+                <div class="iti-flag CV"></div>Cape Verde<span class="hidden mask">+238(###)##-##</span>
+              </li><li>
+                <div class="iti-flag AN"></div>Caribbean Netherlands<span class="hidden mask">+599-###-####</span>
+              </li><li>
+                <div class="iti-flag KY"></div>Cayman Islands<span class="hidden mask">+1(345)###-####</span>
+              </li><li>
+                <div class="iti-flag CF"></div>Central African Republic<span class="hidden mask">+236-##-##-####</span>
+              </li><li>
+                <div class="iti-flag TD"></div>Chad<span class="hidden mask">+235-##-##-##-##</span>
+              </li><li>
+                <div class="iti-flag CL"></div>Chile<span class="hidden mask">+56-#-####-####</span>
+              </li><li>
+                <div class="iti-flag CN"></div>China (PRC)<span class="hidden mask">+86(###)####-###</span>
+              </li><li>
+                <div class="iti-flag CO"></div>Colombia<span class="hidden mask">+57(###)###-####</span>
+              </li><li>
+                <div class="iti-flag KM"></div>Comoros<span class="hidden mask">+269-##-#####</span>
+              </li><li>
+                <div class="iti-flag CG"></div>Congo (Brazzaville)<span class="hidden mask">+242-##-###-####</span>
+              </li><li>
+                <div class="iti-flag CK"></div>Cook Islands<span class="hidden mask">+682-##-###</span>
+              </li><li>
+                <div class="iti-flag CR"></div>Costa Rica<span class="hidden mask">+506-####-####</span>
+              </li><li>
+                <div class="iti-flag CI"></div>Cote d’Ivoire (Ivory Coast)<span class="hidden mask">+225-##-###-###</span>
+              </li><li>
+                <div class="iti-flag HR"></div>Croatia<span class="hidden mask">+385-##-###-###</span>
+              </li><li>
+                <div class="iti-flag CU"></div>Cuba<span class="hidden mask">+53-#-###-####</span>
+              </li><li>
+                <div class="iti-flag CW"></div>Curacao<span class="hidden mask">+599-###-####</span>
+              </li><li>
+                <div class="iti-flag CY"></div>Cyprus<span class="hidden mask">+357-##-###-###</span>
+              </li><li>
+                <div class="iti-flag CZ"></div>Czech Republic<span class="hidden mask">+420(###)###-###</span>
+              </li><li>
+                <div class="iti-flag CD"></div>Dem. Rep. Congo<span class="hidden mask">+243(###)###-###</span>
+              </li><li>
+                <div class="iti-flag DK"></div>Denmark<span class="hidden mask">+45-##-##-##-##</span>
+              </li><li>
+                <div class="iti-flag IO"></div>Diego Garcia<span class="hidden mask">+246-###-####</span>
+              </li><li>
+                <div class="iti-flag DJ"></div>Djibouti<span class="hidden mask">+253-##-##-##-##</span>
+              </li><li>
+                <div class="iti-flag DM"></div>Dominica<span class="hidden mask">+1(767)###-####</span>
+              </li><li>
+                <div class="iti-flag DO"></div>Dominican Republic<span class="hidden mask">+1(809)###-####</span>
+              </li><li>
+                <div class="iti-flag TL"></div>East Timor<span class="hidden mask">+670-###-####</span>
+              </li><li>
+                <div class="iti-flag EC"></div>Ecuador<span class="hidden mask">+593-#-###-####</span>
+              </li><li>
+                <div class="iti-flag EG"></div>Egypt<span class="hidden mask">+20(###)###-####</span>
+              </li><li>
+                <div class="iti-flag SV"></div>El Salvador<span class="hidden mask">+503-##-##-####</span>
+              </li><li>
+                <div class="iti-flag GQ"></div>Equatorial Guinea<span class="hidden mask">+240-##-###-####</span>
+              </li><li>
+                <div class="iti-flag ER"></div>Eritrea<span class="hidden mask">+291-#-###-###</span>
+              </li><li>
+                <div class="iti-flag EE"></div>Estonia<span class="hidden mask">+372-###-####</span>
+              </li><li>
+                <div class="iti-flag ET"></div>Ethiopia<span class="hidden mask">+251-##-###-####</span>
+              </li><li>
+                <div class="iti-flag FM"></div>F.S. Micronesia<span class="hidden mask">+691-###-####</span>
+              </li><li>
+                <div class="iti-flag FK"></div>Falkland Islands<span class="hidden mask">+500-#####</span>
+              </li><li>
+                <div class="iti-flag FO"></div>Faroe Islands<span class="hidden mask">+298-###-###</span>
+              </li><li>
+                <div class="iti-flag FJ"></div>Fiji<span class="hidden mask">+679-##-#####</span>
+              </li><li>
+                <div class="iti-flag FI"></div>Finland<span class="hidden mask">+358(###)###-##-##</span>
+              </li><li>
+                <div class="iti-flag FR"></div>France<span class="hidden mask">+33(###)###-###</span>
+              </li><li>
+                <div class="iti-flag PF"></div>French Polynesia<span class="hidden mask">+689-##-##-##</span>
+              </li><li>
+                <div class="iti-flag GA"></div>Gabon<span class="hidden mask">+241-#-##-##-##</span>
+              </li><li>
+                <div class="iti-flag GM"></div>Gambia<span class="hidden mask">+220(###)##-##</span>
+              </li><li>
+                <div class="iti-flag DE"></div>Germany<span class="hidden mask">+49(###)###-####</span>
+              </li><li>
+                <div class="iti-flag GH"></div>Ghana<span class="hidden mask">+233(###)###-###</span>
+              </li><li>
+                <div class="iti-flag GI"></div>Gibraltar<span class="hidden mask">+350-###-#####</span>
+              </li><li>
+                <div class="iti-flag GR"></div>Greece<span class="hidden mask">+30(###)###-####</span>
+              </li><li>
+                <div class="iti-flag GL"></div>Greenland<span class="hidden mask">+299-##-##-##</span>
+              </li><li>
+                <div class="iti-flag GD"></div>Grenada<span class="hidden mask">+1(473)###-####</span>
+              </li><li>
+                <div class="iti-flag FR"></div>Guadeloupe<span class="hidden mask">+590(###)###-###</span>
+              </li><li>
+                <div class="iti-flag GU"></div>Guam<span class="hidden mask">+1(671)###-####</span>
+              </li><li>
+                <div class="iti-flag GT"></div>Guatemala<span class="hidden mask">+502-#-###-####</span>
+              </li><li>
+                <div class="iti-flag GF"></div>Guiana (French)<span class="hidden mask">+594-#####-####</span>
+              </li><li>
+                <div class="iti-flag GN"></div>Guinea<span class="hidden mask">+224-##-###-###</span>
+              </li><li>
+                <div class="iti-flag GW"></div>Guinea-Bissau<span class="hidden mask">+245-#-######</span>
+              </li><li>
+                <div class="iti-flag GY"></div>Guyana<span class="hidden mask">+592-###-####</span>
+              </li><li>
+                <div class="iti-flag HT"></div>Haiti<span class="hidden mask">+509-##-##-####</span>
+              </li><li>
+                <div class="iti-flag HN"></div>Honduras<span class="hidden mask">+504-####-####</span>
+              </li><li>
+                <div class="iti-flag HK"></div>Hong Kong<span class="hidden mask">+852-####-####</span>
+              </li><li>
+                <div class="iti-flag HU"></div>Hungary<span class="hidden mask">+36(###)###-###</span>
+              </li><li>
+                <div class="iti-flag IS"></div>Iceland<span class="hidden mask">+354-###-####</span>
+              </li><li>
+                <div class="iti-flag IN"></div>India<span class="hidden mask">+91(####)###-###</span>
+              </li><li>
+                <div class="iti-flag ID"></div>Indonesia<span class="hidden mask">+62-##-###-###</span>
+              </li><li>
+                <div class="iti-flag IR"></div>Iran<span class="hidden mask">+98(###)###-####</span>
+              </li><li>
+                <div class="iti-flag IQ"></div>Iraq<span class="hidden mask">+964(###)###-####</span>
+              </li><li>
+                <div class="iti-flag IE"></div>Ireland<span class="hidden mask">+353(###)###-###</span>
+              </li><li>
+                <div class="iti-flag IL"></div>Israel<span class="hidden mask">+972-#-###-####</span>
+              </li><li>
+                <div class="iti-flag IT"></div>Italy<span class="hidden mask">+39(###)####-###</span>
+              </li><li>
+                <div class="iti-flag JM"></div>Jamaica<span class="hidden mask">+1(876)###-####</span>
+              </li><li>
+                <div class="iti-flag JP"></div>Japan <span class="hidden mask">+81-##-####-####</span>
+              </li><li>
+                <div class="iti-flag JO"></div>Jordan<span class="hidden mask">+962-#-####-####</span>
+              </li><li>
+                <div class="iti-flag KZ"></div>Kazakhstan<span class="hidden mask">+7(6##)###-##-##</span>
+              </li><li>
+                <div class="iti-flag KZ"></div>Kazakhstan<span class="hidden mask">+7(7##)###-##-##</span>
+              </li><li>
+                <div class="iti-flag KE"></div>Kenya<span class="hidden mask">+254-###-######</span>
+              </li><li>
+                <div class="iti-flag KI"></div>Kiribati<span class="hidden mask">+686-##-###</span>
+              </li><li>
+                <div class="iti-flag KR"></div>Korea (South)<span class="hidden mask">+82-##-###-####</span>
+              </li><li>
+                <div class="iti-flag KW"></div>Kuwait<span class="hidden mask">+965-####-####</span>
+              </li><li>
+                <div class="iti-flag KG"></div>Kyrgyzstan<span class="hidden mask">+996(###)###-###</span>
+              </li><li>
+                <div class="iti-flag LA"></div>Laos<span class="hidden mask">+856-##-###-###</span>
+              </li><li>
+                <div class="iti-flag LV"></div>Latvia<span class="hidden mask">+371-##-###-###</span>
+              </li><li>
+                <div class="iti-flag LB"></div>Lebanon<span class="hidden mask">+961-#-###-###</span>
+              </li><li>
+                <div class="iti-flag LS"></div>Lesotho<span class="hidden mask">+266-#-###-####</span>
+              </li><li>
+                <div class="iti-flag LR"></div>Liberia<span class="hidden mask">+231-##-###-###</span>
+              </li><li>
+                <div class="iti-flag LY"></div>Libya<span class="hidden mask">+218-##-###-###</span>
+              </li><li>
+                <div class="iti-flag LI"></div>Liechtenstein<span class="hidden mask">+423(###)###-####</span>
+              </li><li>
+                <div class="iti-flag LT"></div>Lithuania<span class="hidden mask">+370(###)##-###</span>
+              </li><li>
+                <div class="iti-flag LU"></div>Luxembourg<span class="hidden mask">+352(###)###-###</span>
+              </li><li>
+                <div class="iti-flag MO"></div>Macau<span class="hidden mask">+853-####-####</span>
+              </li><li>
+                <div class="iti-flag MG"></div>Madagascar<span class="hidden mask">+261-##-##-#####</span>
+              </li><li>
+                <div class="iti-flag MW"></div>Malawi<span class="hidden mask">+265-#-####-####</span>
+              </li><li>
+                <div class="iti-flag MY"></div>Malaysia <span class="hidden mask">+60-##-###-####</span>
+              </li><li>
+                <div class="iti-flag MV"></div>Maldives<span class="hidden mask">+960-###-####</span>
+              </li><li>
+                <div class="iti-flag ML"></div>Mali<span class="hidden mask">+223-##-##-####</span>
+              </li><li>
+                <div class="iti-flag MT"></div>Malta<span class="hidden mask">+356-####-####</span>
+              </li><li>
+                <div class="iti-flag MH"></div>Marshall Islands<span class="hidden mask">+692-###-####</span>
+              </li><li>
+                <div class="iti-flag MQ"></div>Martinique<span class="hidden mask">+596(###)##-##-##</span>
+              </li><li>
+                <div class="iti-flag MR"></div>Mauritania<span class="hidden mask">+222-##-##-####</span>
+              </li><li>
+                <div class="iti-flag MU"></div>Mauritius<span class="hidden mask">+230-###-####</span>
+              </li><li>
+                <div class="iti-flag FR"></div>Mayotte<span class="hidden mask">+262-#####-####</span>
+              </li><li>
+                <div class="iti-flag MX"></div>Mexico<span class="hidden mask">+52-##-##-####</span>
+              </li><li>
+                <div class="iti-flag MD"></div>Moldova<span class="hidden mask">+373-####-####</span>
+              </li><li>
+                <div class="iti-flag MC"></div>Monaco<span class="hidden mask">+377-##-###-###</span>
+              </li><li>
+                <div class="iti-flag MN"></div>Mongolia<span class="hidden mask">+976-##-##-####</span>
+              </li><li>
+                <div class="iti-flag ME"></div>Montenegro<span class="hidden mask">+382-##-###-###</span>
+              </li><li>
+                <div class="iti-flag MS"></div>Montserrat<span class="hidden mask">+1(664)###-####</span>
+              </li><li>
+                <div class="iti-flag MA"></div>Morocco<span class="hidden mask">+212-##-####-###</span>
+              </li><li>
+                <div class="iti-flag MZ"></div>Mozambique<span class="hidden mask">+258-##-###-###</span>
+              </li><li>
+                <div class="iti-flag NA"></div>Namibia<span class="hidden mask">+264-##-###-####</span>
+              </li><li>
+                <div class="iti-flag NR"></div>Nauru<span class="hidden mask">+674-###-####</span>
+              </li><li>
+                <div class="iti-flag NP"></div>Nepal<span class="hidden mask">+977-##-###-###</span>
+              </li><li>
+                <div class="iti-flag AN"></div>Netherlands Antilles<span class="hidden mask">+599-###-####</span>
+              </li><li>
+                <div class="iti-flag NL"></div>Netherlands<span class="hidden mask">+31-##-###-####</span>
+              </li><li>
+                <div class="iti-flag NC"></div>New Caledonia<span class="hidden mask">+687-##-####</span>
+              </li><li>
+                <div class="iti-flag NZ"></div>New Zealand<span class="hidden mask">+64-##-###-###</span>
+              </li><li>
+                <div class="iti-flag NI"></div>Nicaragua<span class="hidden mask">+505-####-####</span>
+              </li><li>
+                <div class="iti-flag NE"></div>Niger<span class="hidden mask">+227-##-##-####</span>
+              </li><li>
+                <div class="iti-flag NG"></div>Nigeria <span class="hidden mask">+234(###)###-####</span>
+              </li><li>
+                <div class="iti-flag NU"></div>Niue<span class="hidden mask">+683-####</span>
+              </li><li>
+                <div class="iti-flag NF"></div>Norfolk Island<span class="hidden mask">+672-3##-###</span>
+              </li><li>
+                <div class="iti-flag MP"></div>Northern Mariana Islands<span class="hidden mask">+1(670)###-####</span>
+              </li><li>
+                <div class="iti-flag NO"></div>Norway<span class="hidden mask">+47(###)##-###</span>
+              </li><li>
+                <div class="iti-flag OM"></div>Oman<span class="hidden mask">+968-##-###-###</span>
+              </li><li>
+                <div class="iti-flag PK"></div>Pakistan<span class="hidden mask">+92(###)###-####</span>
+              </li><li>
+                <div class="iti-flag PW"></div>Palau<span class="hidden mask">+680-###-####</span>
+              </li><li>
+                <div class="iti-flag PS"></div>Palestine<span class="hidden mask">+970-##-###-####</span>
+              </li><li>
+                <div class="iti-flag PA"></div>Panama<span class="hidden mask">+507-###-####</span>
+              </li><li>
+                <div class="iti-flag PG"></div>Papua New Guinea<span class="hidden mask">+675(###)##-###</span>
+              </li><li>
+                <div class="iti-flag PY"></div>Paraguay<span class="hidden mask">+595(###)###-###</span>
+              </li><li>
+                <div class="iti-flag PE"></div>Peru<span class="hidden mask">+51(###)###-###</span>
+              </li><li>
+                <div class="iti-flag PH"></div>Philippines<span class="hidden mask">+63(###)###-####</span>
+              </li><li>
+                <div class="iti-flag PL"></div>Poland<span class="hidden mask">+48(###)###-###</span>
+              </li><li>
+                <div class="iti-flag PT"></div>Portugal<span class="hidden mask">+351-##-###-####</span>
+              </li><li>
+                <div class="iti-flag QA"></div>Qatar<span class="hidden mask">+974-####-####</span>
+              </li><li>
+                <div class="iti-flag GE"></div>Rep. of Georgia<span class="hidden mask">+995(###)###-###</span>
+              </li><li>
+                <div class="iti-flag MK"></div>Republic of Macedonia<span class="hidden mask">+389-##-###-###</span>
+              </li><li>
+                <div class="iti-flag RE"></div>Reunion<span class="hidden mask">+262-#####-####</span>
+              </li><li>
+                <div class="iti-flag RO"></div>Romania<span class="hidden mask">+40-##-###-####</span>
+              </li><li>
+                <div class="iti-flag RU"></div>Russia<span class="hidden mask">+7(###)###-##-##</span>
+              </li><li>
+                <div class="iti-flag RW"></div>Rwanda<span class="hidden mask">+250(###)###-###</span>
+              </li><li>
+                <div class="iti-flag SH"></div>Saint Helena<span class="hidden mask">+290-####</span>
+              </li><li>
+                <div class="iti-flag KN"></div>Saint Kitts &amp; Nevis<span class="hidden mask">+1(869)###-####</span>
+              </li><li>
+                <div class="iti-flag LC"></div>Saint Lucia<span class="hidden mask">+1(758)###-####</span>
+              </li><li>
+                <div class="iti-flag VC"></div>Saint Vincent &amp; the Grenadines<span class="hidden mask">+1(784)###-####</span>
+              </li><li>
+                <div class="iti-flag WS"></div>Samoa<span class="hidden mask">+685-##-####</span>
+              </li><li>
+                <div class="iti-flag SM"></div>San Marino<span class="hidden mask">+378-####-######</span>
+              </li><li>
+                <div class="iti-flag ST"></div>Sao Tome and Principe<span class="hidden mask">+239-##-#####</span>
+              </li><li>
+                <div class="iti-flag SA"></div>Saudi Arabia<span class="hidden mask">+966-#-###-####</span>
+              </li><li>
+                <div class="iti-flag SN"></div>Senegal<span class="hidden mask">+221-##-###-####</span>
+              </li><li>
+                <div class="iti-flag RS"></div>Serbia<span class="hidden mask">+381-##-###-####</span>
+              </li><li>
+                <div class="iti-flag SC"></div>Seychelles<span class="hidden mask">+248-#-###-###</span>
+              </li><li>
+                <div class="iti-flag SL"></div>Sierra Leone<span class="hidden mask">+232-##-######</span>
+              </li><li>
+                <div class="iti-flag SG"></div>Singapore<span class="hidden mask">+65-####-####</span>
+              </li><li>
+                <div class="iti-flag SX"></div>Sint Maarten<span class="hidden mask">+1(721)###-####</span>
+              </li><li>
+                <div class="iti-flag SK"></div>Slovakia<span class="hidden mask">+421(###)###-###</span>
+              </li><li>
+                <div class="iti-flag SI"></div>Slovenia<span class="hidden mask">+386-##-###-###</span>
+              </li><li>
+                <div class="iti-flag SB"></div>Solomon Islands <span class="hidden mask">+677-###-####</span>
+              </li><li>
+                <div class="iti-flag SO"></div>Somalia <span class="hidden mask">+252-#-###-###</span>
+              </li><li>
+                <div class="iti-flag ZA"></div>South Africa<span class="hidden mask">+27-##-###-####</span>
+              </li><li>
+                <div class="iti-flag SS"></div>South Sudan<span class="hidden mask">+211-##-###-####</span>
+              </li><li>
+                <div class="iti-flag ES"></div>Spain<span class="hidden mask">+34(###)###-###</span>
+              </li><li>
+                <div class="iti-flag LK"></div>Sri Lanka<span class="hidden mask">+94-##-###-####</span>
+              </li><li>
+                <div class="iti-flag FR"></div>St Pierre &amp; Miquelon<span class="hidden mask">+508-##-####</span>
+              </li><li>
+                <div class="iti-flag SD"></div>Sudan<span class="hidden mask">+249-##-###-####</span>
+              </li><li>
+                <div class="iti-flag SR"></div>Suriname<span class="hidden mask">+597-###-###</span>
+              </li><li>
+                <div class="iti-flag SZ"></div>Swaziland<span class="hidden mask">+268-##-##-####</span>
+              </li><li>
+                <div class="iti-flag SE"></div>Sweden<span class="hidden mask">+46-##-###-####</span>
+              </li><li>
+                <div class="iti-flag CH"></div>Switzerland<span class="hidden mask">+41-##-###-####</span>
+              </li><li>
+                <div class="iti-flag SY"></div>Syrian Arab Republic<span class="hidden mask">+963-##-####-###</span>
+              </li><li>
+                <div class="iti-flag TW"></div>Taiwan<span class="hidden mask">+886-####-####</span>
+              </li><li>
+                <div class="iti-flag TJ"></div>Tajikistan<span class="hidden mask">+992-##-###-####</span>
+              </li><li>
+                <div class="iti-flag TZ"></div>Tanzania<span class="hidden mask">+255-##-###-####</span>
+              </li><li>
+                <div class="iti-flag TH"></div>Thailand<span class="hidden mask">+66-##-###-###</span>
+              </li><li>
+                <div class="iti-flag TG"></div>Togo<span class="hidden mask">+228-##-###-###</span>
+              </li><li>
+                <div class="iti-flag TK"></div>Tokelau<span class="hidden mask">+690-####</span>
+              </li><li>
+                <div class="iti-flag TO"></div>Tonga<span class="hidden mask">+676-#####</span>
+              </li><li>
+                <div class="iti-flag TT"></div>Trinidad &amp; Tobago<span class="hidden mask">+1(868)###-####</span>
+              </li><li>
+                <div class="iti-flag SH"></div>Tristan da Cunha<span class="hidden mask">+290-####</span>
+              </li><li>
+                <div class="iti-flag TN"></div>Tunisia<span class="hidden mask">+216-##-###-###</span>
+              </li><li>
+                <div class="iti-flag TR"></div>Turkey<span class="hidden mask">+90(###)###-####</span>
+              </li><li>
+                <div class="iti-flag TM"></div>Turkmenistan<span class="hidden mask">+993-#-###-####</span>
+              </li><li>
+                <div class="iti-flag TC"></div>Turks &amp; Caicos<span class="hidden mask">+1(649)###-####</span>
+              </li><li>
+                <div class="iti-flag TV"></div>Tuvalu <span class="hidden mask">+688-90####</span>
+              </li><li>
+                <div class="iti-flag VI"></div>US Virgin Islands<span class="hidden mask">+1(340)###-####</span>
+              </li><li>
+                <div class="iti-flag US"></div>USA<span class="hidden mask">+1(###)###-####</span>
+              </li><li>
+                <div class="iti-flag UG"></div>Uganda<span class="hidden mask">+256(###)###-###</span>
+              </li><li>
+                <div class="iti-flag UA"></div>Ukraine<span class="hidden mask">+380(##)###-##-##</span>
+              </li><li>
+                <div class="iti-flag AE"></div>United Arab Emirates<span class="hidden mask">+971-#-###-####</span>
+              </li><li>
+                <div class="iti-flag UK"></div>United Kingdom<span class="hidden mask">+44-##-####-####</span>
+              </li><li>
+                <div class="iti-flag UY"></div>Uruguay<span class="hidden mask">+598-#-###-##-##</span>
+              </li><li>
+                <div class="iti-flag UZ"></div>Uzbekistan<span class="hidden mask">+998-##-###-####</span>
+              </li><li>
+                <div class="iti-flag VU"></div>Vanuatu <span class="hidden mask">+678-##-#####</span>
+              </li><li>
+                <div class="iti-flag VA"></div>Vatican City<span class="hidden mask">+39-6-698-#####</span>
+              </li><li>
+                <div class="iti-flag VE"></div>Venezuela<span class="hidden mask">+58(###)###-####</span>
+              </li><li>
+                <div class="iti-flag VN"></div>Vietnam<span class="hidden mask">+84(###)####-###</span>
+              </li><li>
+                <div class="iti-flag WF"></div>Wallis and Futuna<span class="hidden mask">+681-##-####</span>
+              </li><li>
+                <div class="iti-flag YE"></div>Yemen <span class="hidden mask">+967-###-###-###</span>
+              </li><li>
+                <div class="iti-flag ZM"></div>Zambia<span class="hidden mask">+260-##-###-####</span>
+              </li><li>
+                <div class="iti-flag ZW"></div>Zimbabwe<span class="hidden mask">+263-#-######</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="asd"></div>
+          <span id="valid-msg" class="hide text-success">✓ Valid</span>
+          <span id="error-msg" class="hide text-danger"></span>
+          <button type="button" class="callback__button" id="callback">
+            Call Me Back <span class="loading badge"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+<!-- <script src="https://gist.github.com/romkolisnyk/4c640792963dbbc21b180406a5c5459e.js"></script> -->
+<script src="script.js"></script>
+
+    <script>
+
+      var codes =  [{"mask":"+247-####","cc":"AC","name_en":"Ascension","":"Остров Вознесения"},{"mask":"+376-###-###","cc":"AD","name_en":"Andorra"},{"mask":"+971-5#-###-####","cc":"AE","name_en":"United Arab Emirates","desc_ru":"мобильные"},{"mask":"+971-#-###-####","cc":"AE","name_en":"United Arab Emirates"},{"mask":"+93-##-###-####","cc":"AF","name_en":"Afghanistan"},{"mask":"+1(268)###-####","cc":"AG","name_en":"Antigua & Barbuda"},{"mask":"+1(264)###-####","cc":"AI","name_en":"Anguilla"},{"mask":"+355(###)###-###","cc":"AL","name_en":"Albania"},{"mask":"+374-##-###-###","cc":"AM","name_en":"Armenia"},{"mask":"+599-###-####","cc":"AN","name_en":"Caribbean Netherlands"},{"mask":"+599-###-####","cc":"AN","name_en":"Netherlands Antilles"},{"mask":"+599-9###-####","cc":"AN","name_en":"Netherlands Antilles","desc_ru":"Кюрасао"},{"mask":"+244(###)###-###","cc":"AO","name_en":"Angola"},{"mask":"+672-1##-###","cc":"AQ","name_en":"Australian bases in Antarctica"},{"mask":"+54(###)###-####","cc":"AR","name_en":"Argentina"},{"mask":"+1(684)###-####","cc":"AS","name_en":"American Samoa"},{"mask":"+43(###)###-####","cc":"AT","name_en":"Austria"},{"mask":"+61-#-####-####","cc":"AU","name_en":"Australia"},{"mask":"+297-###-####","cc":"AW","name_en":"Aruba"},{"mask":"+994-##-###-##-##","cc":"AZ","name_en":"Azerbaijan"},{"mask":"+387-##-#####","cc":"BA","name_en":"Bosnia and Herzegovina"},{"mask":"+387-##-####","cc":"BA","name_en":"Bosnia and Herzegovina"},{"mask":"+1(246)###-####","cc":"BB","name_en":"Barbados"},{"mask":"+880-##-###-###","cc":"BD","name_en":"Bangladesh"},{"mask":"+32(###)###-###","cc":"BE","name_en":"Belgium"},{"mask":"+226-##-##-####","cc":"BF","name_en":"Burkina Faso"},{"mask":"+359(###)###-###","cc":"BG","name_en":"Bulgaria"},{"mask":"+973-####-####","cc":"BH","name_en":"Bahrain"},{"mask":"+257-##-##-####","cc":"BI","name_en":"Burundi"},{"mask":"+229-##-##-####","cc":"BJ","name_en":"Benin"},{"mask":"+1(441)###-####","cc":"BM","name_en":"Bermuda"},{"mask":"+673-###-####","cc":"BN","name_en":"Brunei Darussalam"},{"mask":"+591-#-###-####","cc":"BO","name_en":"Bolivia"},{"mask":"+55(##)####-####","cc":"BR","name_en":"Brazil"},{"mask":"+55(##)7###-####","cc":"BR","name_en":"Brazil","desc_ru":"мобильные"},{"mask":"+55(##)9####-####","cc":"BR","name_en":"Brazil","desc_ru":"мобильные"},{"mask":"+1(242)###-####","cc":"BS","name_en":"Bahamas"},{"mask":"+975-17-###-###","cc":"BT","name_en":"Bhutan"},{"mask":"+975-#-###-###","cc":"BT","name_en":"Bhutan"},{"mask":"+267-##-###-###","cc":"BW","name_en":"Botswana"},{"mask":"+375(##)###-##-##","cc":"BY","name_en":"Belarus"},{"mask":"+501-###-####","cc":"BZ","name_en":"Belize"},{"mask":"+243(###)###-###","cc":"CD","name_en":"Dem. Rep. Congo"},{"mask":"+236-##-##-####","cc":"CF","name_en":"Central African Republic"},{"mask":"+242-##-###-####","cc":"CG","name_en":"Congo (Brazzaville)"},{"mask":"+41-##-###-####","cc":"CH","name_en":"Switzerland"},{"mask":"+225-##-###-###","cc":"CI","name_en":"Cote d’Ivoire (Ivory Coast)"},{"mask":"+682-##-###","cc":"CK","name_en":"Cook Islands"},{"mask":"+56-#-####-####","cc":"CL","name_en":"Chile"},{"mask":"+237-####-####","cc":"CM","name_en":"Cameroon"},{"mask":"+86(###)####-####","cc":"CN","name_en":"China (PRC)"},{"mask":"+86(###)####-###","cc":"CN","name_en":"China (PRC)"},{"mask":"+86-##-#####-#####","cc":"CN","name_en":"China (PRC)"},{"mask":"+57(###)###-####","cc":"CO","name_en":"Colombia"},{"mask":"+506-####-####","cc":"CR","name_en":"Costa Rica"},{"mask":"+53-#-###-####","cc":"CU","name_en":"Cuba"},{"mask":"+238(###)##-##","cc":"CV","name_en":"Cape Verde"},{"mask":"+599-###-####","cc":"CW","name_en":"Curacao"},{"mask":"+357-##-###-###","cc":"CY","name_en":"Cyprus"},{"mask":"+420(###)###-###","cc":"CZ","name_en":"Czech Republic"},{"mask":"+49(####)###-####","cc":"DE","name_en":"Germany"},{"mask":"+49(###)###-####","cc":"DE","name_en":"Germany"},{"mask":"+49(###)##-####","cc":"DE","name_en":"Germany"},{"mask":"+49(###)##-###","cc":"DE","name_en":"Germany"},{"mask":"+49(###)##-##","cc":"DE","name_en":"Germany"},{"mask":"+49-###-###","cc":"DE","name_en":"Germany"},{"mask":"+253-##-##-##-##","cc":"DJ","name_en":"Djibouti"},{"mask":"+45-##-##-##-##","cc":"DK","name_en":"Denmark"},{"mask":"+1(767)###-####","cc":"DM","name_en":"Dominica"},{"mask":"+1(809)###-####","cc":"DO","name_en":"Dominican Republic"},{"mask":"+1(829)###-####","cc":"DO","name_en":"Dominican Republic"},{"mask":"+1(849)###-####","cc":"DO","name_en":"Dominican Republic"},{"mask":"+213-##-###-####","cc":"DZ","name_en":"Algeria"},{"mask":"+593-##-###-####","cc":"EC","name_en":"Ecuador ","desc_ru":"мобильные"},{"mask":"+593-#-###-####","cc":"EC","name_en":"Ecuador"},{"mask":"+372-####-####","cc":"EE","name_en":"Estonia ","desc_ru":"мобильные"},{"mask":"+372-###-####","cc":"EE","name_en":"Estonia"},{"mask":"+20(###)###-####","cc":"EG","name_en":"Egypt"},{"mask":"+291-#-###-###","cc":"ER","name_en":"Eritrea"},{"mask":"+34(###)###-###","cc":"ES","name_en":"Spain"},{"mask":"+251-##-###-####","cc":"ET","name_en":"Ethiopia"},{"mask":"+358(###)###-##-##","cc":"FI","name_en":"Finland"},{"mask":"+679-##-#####","cc":"FJ","name_en":"Fiji"},{"mask":"+500-#####","cc":"FK","name_en":"Falkland Islands"},{"mask":"+691-###-####","cc":"FM","name_en":"F.S. Micronesia"},{"mask":"+298-###-###","cc":"FO","name_en":"Faroe Islands"},{"mask":"+262-#####-####","cc":"FR","name_en":"Mayotte"},{"mask":"+33(###)###-###","cc":"FR","name_en":"France"},{"mask":"+508-##-####","cc":"FR","name_en":"St Pierre & Miquelon"},{"mask":"+590(###)###-###","cc":"FR","name_en":"Guadeloupe"},{"mask":"+241-#-##-##-##","cc":"GA","name_en":"Gabon"},{"mask":"+1(473)###-####","cc":"GD","name_en":"Grenada"},{"mask":"+995(###)###-###","cc":"GE","name_en":"Rep. of Georgia"},{"mask":"+594-#####-####","cc":"GF","name_en":"Guiana (French)"},{"mask":"+233(###)###-###","cc":"GH","name_en":"Ghana"},{"mask":"+350-###-#####","cc":"GI","name_en":"Gibraltar"},{"mask":"+299-##-##-##","cc":"GL","name_en":"Greenland"},{"mask":"+220(###)##-##","cc":"GM","name_en":"Gambia"},{"mask":"+224-##-###-###","cc":"GN","name_en":"Guinea"},{"mask":"+240-##-###-####","cc":"GQ","name_en":"Equatorial Guinea"},{"mask":"+30(###)###-####","cc":"GR","name_en":"Greece"},{"mask":"+502-#-###-####","cc":"GT","name_en":"Guatemala"},{"mask":"+1(671)###-####","cc":"GU","name_en":"Guam"},{"mask":"+245-#-######","cc":"GW","name_en":"Guinea-Bissau"},{"mask":"+592-###-####","cc":"GY","name_en":"Guyana"},{"mask":"+852-####-####","cc":"HK","name_en":"Hong Kong"},{"mask":"+504-####-####","cc":"HN","name_en":"Honduras"},{"mask":"+385-##-###-###","cc":"HR","name_en":"Croatia"},{"mask":"+509-##-##-####","cc":"HT","name_en":"Haiti"},{"mask":"+36(###)###-###","cc":"HU","name_en":"Hungary"},{"mask":"+62(8##)###-####","cc":"ID","name_en":"Indonesia ","desc_ru":"мобильные"},{"mask":"+62-##-###-##","cc":"ID","name_en":"Indonesia"},{"mask":"+62-##-###-###","cc":"ID","name_en":"Indonesia"},{"mask":"+62-##-###-####","cc":"ID","name_en":"Indonesia"},{"mask":"+62(8##)###-###","cc":"ID","name_en":"Indonesia ","desc_ru":"мобильные"},{"mask":"+62(8##)###-##-###","cc":"ID","name_en":"Indonesia ","desc_ru":"мобильные"},{"mask":"+353(###)###-###","cc":"IE","name_en":"Ireland"},{"mask":"+972-5#-###-####","cc":"IL","name_en":"Israel ","desc_ru":"мобильные"},{"mask":"+972-#-###-####","cc":"IL","name_en":"Israel"},{"mask":"+91(####)###-###","cc":"IN","name_en":"India"},{"mask":"+246-###-####","cc":"IO","name_en":"Diego Garcia"},{"mask":"+964(###)###-####","cc":"IQ","name_en":"Iraq"},{"mask":"+98(###)###-####","cc":"IR","name_en":"Iran"},{"mask":"+354-###-####","cc":"IS","name_en":"Iceland"},{"mask":"+39(###)####-###","cc":"IT","name_en":"Italy"},{"mask":"+1(876)###-####","cc":"JM","name_en":"Jamaica"},{"mask":"+962-#-####-####","cc":"JO","name_en":"Jordan"},{"mask":"+81-##-####-####","cc":"JP","name_en":"Japan ","desc_ru":"мобильные"},{"mask":"+81(###)###-###","cc":"JP","name_en":"Japan"},{"mask":"+254-###-######","cc":"KE","name_en":"Kenya"},{"mask":"+996(###)###-###","cc":"KG","name_en":"Kyrgyzstan"},{"mask":"+855-##-###-###","cc":"KH","name_en":"Cambodia"},{"mask":"+686-##-###","cc":"KI","name_en":"Kiribati"},{"mask":"+269-##-#####","cc":"KM","name_en":"Comoros"},{"mask":"+1(869)###-####","cc":"KN","name_en":"Saint Kitts & Nevis"},{"mask":"+850-191-###-####","cc":"KP","name_en":"DPR Korea (North) ","desc_ru":"мобильные"},{"mask":"+850-##-###-###","cc":"KP","name_en":"DPR Korea (North)"},{"mask":"+850-###-####-###","cc":"KP","name_en":"DPR Korea (North)"},{"mask":"+850-###-###","cc":"KP","name_en":"DPR Korea (North)"},{"mask":"+850-####-####","cc":"KP","name_en":"DPR Korea (North)"},{"mask":"+850-####-#############","cc":"KP","name_en":"DPR Korea (North)"},{"mask":"+82-##-###-####","cc":"KR","name_en":"Korea (South)"},{"mask":"+965-####-####","cc":"KW","name_en":"Kuwait"},{"mask":"+1(345)###-####","cc":"KY","name_en":"Cayman Islands"},{"mask":"+7(6##)###-##-##","cc":"KZ","name_en":"Kazakhstan"},{"mask":"+7(7##)###-##-##","cc":"KZ","name_en":"Kazakhstan"},{"mask":"+856(20##)###-###","cc":"LA","name_en":"Laos ","desc_ru":"мобильные"},{"mask":"+856-##-###-###","cc":"LA","name_en":"Laos"},{"mask":"+961-##-###-###","cc":"LB","name_en":"Lebanon ","desc_ru":"мобильные"},{"mask":"+961-#-###-###","cc":"LB","name_en":"Lebanon"},{"mask":"+1(758)###-####","cc":"LC","name_en":"Saint Lucia"},{"mask":"+423(###)###-####","cc":"LI","name_en":"Liechtenstein"},{"mask":"+94-##-###-####","cc":"LK","name_en":"Sri Lanka"},{"mask":"+231-##-###-###","cc":"LR","name_en":"Liberia"},{"mask":"+266-#-###-####","cc":"LS","name_en":"Lesotho"},{"mask":"+370(###)##-###","cc":"LT","name_en":"Lithuania"},{"mask":"+352(###)###-###","cc":"LU","name_en":"Luxembourg"},{"mask":"+371-##-###-###","cc":"LV","name_en":"Latvia"},{"mask":"+218-##-###-###","cc":"LY","name_en":"Libya"},{"mask":"+218-21-###-####","cc":"LY","name_en":"Libya","desc_ru":"Триполи"},{"mask":"+212-##-####-###","cc":"MA","name_en":"Morocco"},{"mask":"+377(###)###-###","cc":"MC","name_en":"Monaco"},{"mask":"+377-##-###-###","cc":"MC","name_en":"Monaco"},{"mask":"+373-####-####","cc":"MD","name_en":"Moldova"},{"mask":"+382-##-###-###","cc":"ME","name_en":"Montenegro"},{"mask":"+261-##-##-#####","cc":"MG","name_en":"Madagascar"},{"mask":"+692-###-####","cc":"MH","name_en":"Marshall Islands"},{"mask":"+389-##-###-###","cc":"MK","name_en":"Republic of Macedonia"},{"mask":"+223-##-##-####","cc":"ML","name_en":"Mali"},{"mask":"+95-##-###-###","cc":"MM","name_en":"Burma (Myanmar)"},{"mask":"+95-#-###-###","cc":"MM","name_en":"Burma (Myanmar)"},{"mask":"+95-###-###","cc":"MM","name_en":"Burma (Myanmar)"},{"mask":"+976-##-##-####","cc":"MN","name_en":"Mongolia"},{"mask":"+853-####-####","cc":"MO","name_en":"Macau"},{"mask":"+1(670)###-####","cc":"MP","name_en":"Northern Mariana Islands"},{"mask":"+596(###)##-##-##","cc":"MQ","name_en":"Martinique"},{"mask":"+222-##-##-####","cc":"MR","name_en":"Mauritania"},{"mask":"+1(664)###-####","cc":"MS","name_en":"Montserrat"},{"mask":"+356-####-####","cc":"MT","name_en":"Malta"},{"mask":"+230-###-####","cc":"MU","name_en":"Mauritius"},{"mask":"+960-###-####","cc":"MV","name_en":"Maldives"},{"mask":"+265-1-###-###","cc":"MW","name_en":"Malawi","desc_ru":"Telecom Ltd"},{"mask":"+265-#-####-####","cc":"MW","name_en":"Malawi"},{"mask":"+52(###)###-####","cc":"MX","name_en":"Mexico"},{"mask":"+52-##-##-####","cc":"MX","name_en":"Mexico"},{"mask":"+60-##-###-####","cc":"MY","name_en":"Malaysia ","desc_ru":"мобильные"},{"mask":"+60(###)###-###","cc":"MY","name_en":"Malaysia"},{"mask":"+60-##-###-###","cc":"MY","name_en":"Malaysia"},{"mask":"+60-#-###-###","cc":"MY","name_en":"Malaysia"},{"mask":"+258-##-###-###","cc":"MZ","name_en":"Mozambique"},{"mask":"+264-##-###-####","cc":"NA","name_en":"Namibia"},{"mask":"+687-##-####","cc":"NC","name_en":"New Caledonia"},{"mask":"+227-##-##-####","cc":"NE","name_en":"Niger"},{"mask":"+672-3##-###","cc":"NF","name_en":"Norfolk Island"},{"mask":"+234(###)###-####","cc":"NG","name_en":"Nigeria"},{"mask":"+234-##-###-###","cc":"NG","name_en":"Nigeria"},{"mask":"+234-##-###-##","cc":"NG","name_en":"Nigeria"},{"mask":"+234(###)###-####","cc":"NG","name_en":"Nigeria ","desc_ru":"мобильные"},{"mask":"+505-####-####","cc":"NI","name_en":"Nicaragua"},{"mask":"+31-##-###-####","cc":"NL","name_en":"Netherlands"},{"mask":"+47(###)##-###","cc":"NO","name_en":"Norway"},{"mask":"+977-##-###-###","cc":"NP","name_en":"Nepal"},{"mask":"+674-###-####","cc":"NR","name_en":"Nauru"},{"mask":"+683-####","cc":"NU","name_en":"Niue"},{"mask":"+64(###)###-###","cc":"NZ","name_en":"New Zealand"},{"mask":"+64-##-###-###","cc":"NZ","name_en":"New Zealand"},{"mask":"+64(###)###-####","cc":"NZ","name_en":"New Zealand"},{"mask":"+968-##-###-###","cc":"OM","name_en":"Oman"},{"mask":"+507-###-####","cc":"PA","name_en":"Panama"},{"mask":"+51(###)###-###","cc":"PE","name_en":"Peru"},{"mask":"+689-##-##-##","cc":"PF","name_en":"French Polynesia"},{"mask":"+675(###)##-###","cc":"PG","name_en":"Papua New Guinea"},{"mask":"+63(###)###-####","cc":"PH","name_en":"Philippines"},{"mask":"+92(###)###-####","cc":"PK","name_en":"Pakistan"},{"mask":"+48(###)###-###","cc":"PL","name_en":"Poland"},{"mask":"+970-##-###-####","cc":"PS","name_en":"Palestine"},{"mask":"+351-##-###-####","cc":"PT","name_en":"Portugal"},{"mask":"+680-###-####","cc":"PW","name_en":"Palau"},{"mask":"+595(###)###-###","cc":"PY","name_en":"Paraguay"},{"mask":"+974-####-####","cc":"QA","name_en":"Qatar"},{"mask":"+262-#####-####","cc":"RE","name_en":"Reunion"},{"mask":"+40-##-###-####","cc":"RO","name_en":"Romania"},{"mask":"+381-##-###-####","cc":"RS","name_en":"Serbia"},{"mask":"+7(###)###-##-##","cc":"RU","name_en":"Russia"},{"mask":"+250(###)###-###","cc":"RW","name_en":"Rwanda"},{"mask":"+966-5-####-####","cc":"SA","name_en":"Saudi Arabia ","desc_ru":"мобильные"},{"mask":"+966-#-###-####","cc":"SA","name_en":"Saudi Arabia"},{"mask":"+677-###-####","cc":"SB","name_en":"Solomon Islands ","desc_ru":"мобильные"},{"mask":"+677-#####","cc":"SB","name_en":"Solomon Islands"},{"mask":"+248-#-###-###","cc":"SC","name_en":"Seychelles"},{"mask":"+249-##-###-####","cc":"SD","name_en":"Sudan"},{"mask":"+46-##-###-####","cc":"SE","name_en":"Sweden"},{"mask":"+65-####-####","cc":"SG","name_en":"Singapore"},{"mask":"+290-####","cc":"SH","name_en":"Saint Helena"},{"mask":"+290-####","cc":"SH","name_en":"Tristan da Cunha"},{"mask":"+386-##-###-###","cc":"SI","name_en":"Slovenia"},{"mask":"+421(###)###-###","cc":"SK","name_en":"Slovakia"},{"mask":"+232-##-######","cc":"SL","name_en":"Sierra Leone"},{"mask":"+378-####-######","cc":"SM","name_en":"San Marino"},{"mask":"+221-##-###-####","cc":"SN","name_en":"Senegal"},{"mask":"+252-##-###-###","cc":"SO","name_en":"Somalia"},{"mask":"+252-#-###-###","cc":"SO","name_en":"Somalia"},{"mask":"+252-#-###-###","cc":"SO","name_en":"Somalia ","desc_ru":"мобильные"},{"mask":"+597-###-####","cc":"SR","name_en":"Suriname ","desc_ru":"мобильные"},{"mask":"+597-###-###","cc":"SR","name_en":"Suriname"},{"mask":"+211-##-###-####","cc":"SS","name_en":"South Sudan"},{"mask":"+239-##-#####","cc":"ST","name_en":"Sao Tome and Principe"},{"mask":"+503-##-##-####","cc":"SV","name_en":"El Salvador"},{"mask":"+1(721)###-####","cc":"SX","name_en":"Sint Maarten"},{"mask":"+963-##-####-###","cc":"SY","name_en":"Syrian Arab Republic"},{"mask":"+268-##-##-####","cc":"SZ","name_en":"Swaziland"},{"mask":"+1(649)###-####","cc":"TC","name_en":"Turks & Caicos"},{"mask":"+235-##-##-##-##","cc":"TD","name_en":"Chad"},{"mask":"+228-##-###-###","cc":"TG","name_en":"Togo"},{"mask":"+66-##-###-####","cc":"TH","name_en":"Thailand ","desc_ru":"мобильные"},{"mask":"+66-##-###-###","cc":"TH","name_en":"Thailand"},{"mask":"+992-##-###-####","cc":"TJ","name_en":"Tajikistan"},{"mask":"+690-####","cc":"TK","name_en":"Tokelau"},{"mask":"+670-###-####","cc":"TL","name_en":"East Timor"},{"mask":"+670-77#-#####","cc":"TL","name_en":"East Timor","desc_ru":"Timor Telecom"},{"mask":"+670-78#-#####","cc":"TL","name_en":"East Timor","desc_ru":"Timor Telecom"},{"mask":"+993-#-###-####","cc":"TM","name_en":"Turkmenistan"},{"mask":"+216-##-###-###","cc":"TN","name_en":"Tunisia"},{"mask":"+676-#####","cc":"TO","name_en":"Tonga"},{"mask":"+90(###)###-####","cc":"TR","name_en":"Turkey"},{"mask":"+1(868)###-####","cc":"TT","name_en":"Trinidad & Tobago"},{"mask":"+688-90####","cc":"TV","name_en":"Tuvalu ","desc_ru":"мобильные"},{"mask":"+688-2####","cc":"TV","name_en":"Tuvalu"},{"mask":"+886-#-####-####","cc":"TW","name_en":"Taiwan"},{"mask":"+886-####-####","cc":"TW","name_en":"Taiwan"},{"mask":"+255-##-###-####","cc":"TZ","name_en":"Tanzania"},{"mask":"+380(##)###-##-##","cc":"UA","name_en":"Ukraine","img":"flags@2x.png"},{"mask":"+256(###)###-###","cc":"UG","name_en":"Uganda"},{"mask":"+44-##-####-####","cc":"UK","name_en":"United Kingdom"},{"mask":"+598-#-###-##-##","cc":"UY","name_en":"Uruguay"},{"mask":"+998-##-###-####","cc":"UZ","name_en":"Uzbekistan"},{"mask":"+39-6-698-#####","cc":"VA","name_en":"Vatican City"},{"mask":"+1(784)###-####","cc":"VC","name_en":"Saint Vincent & the Grenadines"},{"mask":"+58(###)###-####","cc":"VE","name_en":"Venezuela"},{"mask":"+1(284)###-####","cc":"VG","name_en":"British Virgin Islands"},{"mask":"+1(340)###-####","cc":"VI","name_en":"US Virgin Islands"},{"mask":"+84-##-####-###","cc":"VN","name_en":"Vietnam"},{"mask":"+84(###)####-###","cc":"VN","name_en":"Vietnam"},{"mask":"+678-##-#####","cc":"VU","name_en":"Vanuatu ","desc_ru":"мобильные"},{"mask":"+678-#####","cc":"VU","name_en":"Vanuatu"},{"mask":"+681-##-####","cc":"WF","name_en":"Wallis and Futuna"},{"mask":"+685-##-####","cc":"WS","name_en":"Samoa"},{"mask":"+967-###-###-###","cc":"YE","name_en":"Yemen ","desc_ru":"мобильные"},{"mask":"+967-#-###-###","cc":"YE","name_en":"Yemen"},{"mask":"+967-##-###-###","cc":"YE","name_en":"Yemen"},{"mask":"+27-##-###-####","cc":"ZA","name_en":"South Africa"},{"mask":"+260-##-###-####","cc":"ZM","name_en":"Zambia"},{"mask":"+263-#-######","cc":"ZW","name_en":"Zimbabwe"},{"mask":"+1(###)###-####","cc":"US","name_en":"USA"},{"mask":"+1(###)###-####","cc":"CA","name_en":"Canada"}]
+
+  document.addEventListener("DOMContentLoaded", function() {
+            var maskList = $.masksSort(codes, ['#'], /[0-9]|#/, "mask");
+            var maskOpts = {
+                inputmask: {
+                    definitions: {
+                        '#': {
+                            validator: "[0-9]",
+                            cardinality: 1
+                        }
+                    },
+                    showMaskOnHover: false,
+                    autoUnmask: true,
+                    clearMaskOnLostFocus: false
+                },
+                match: /[0-9]/,
+                replace: '#',
+                list: maskList,
+                listKey: "mask",
+                
+                onMaskChange: function(maskObj, determined) {
+                    if (determined) {
+                        var hint = maskObj.name_en;
+                        var img = maskObj.cc;
+                        if (maskObj.desc_en && maskObj.desc_en != "") {
+                            hint += " (" + maskObj.desc_en + ")";
+                            img += " (" + maskObj.cc + ")";
+                        }
+                        $("#descr").removeClass().addClass("iti-flag" + " " + img);
+                    }
+                },
+            };
+
+    // $('.phones-list li:not(span)').sort(function (a, b) {
+    //   if (a.textContent < b.textContent) {
+    //     return -1;
+    //   } else {
+    //     return 1;
+    //   }
+    // }).appendTo('.asd');
+
+    $(".phones-list li").click(function (maskObj) {
+      var mask = $(this).find(".mask").html();
+      $("#phone").val(mask);
+      // $(this).find(".iti-flag").toggleClass('bbb aaa');
+      // $("#descr").toggleClass($(this).find(".iti-flag").attr("class"))
+    });
+            $('#phone_mask').change(function() {
+                    $('#phone').inputmask("remove");
+                    $('#phone').inputmasks(maskOpts);
+            });
+
+            $('#phone_mask').change();
+
+            // Getting the country code and name from the user's IP
+            $.get("https://api.ipdata.co?api-key=9e28d2dc196c9225b0ffa3bc3dfa976f5d028370cbe4ec89728f6c49", function (response) {
+                $("#phone").val(response.calling_code);
+                $("#descr").addClass("iti-flag" + " " + response.country_code);
+            }, "jsonp");
+
+        $(".callback-flag").click(function(){
+            $(".phones-list").slideToggle();
+        });
+
+        
+    $(function () {
+
+
+
+      // jQuery.validator.addMethod("phoneno", function (phone_number, element) {
+      //   phone_number = phone_number.replace(/\s+/, "");
+      //   return this.optional(element) || phone_number.length > 9 &&
+      //     phone_number.match(/^((\+[0-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/);
+      // }, "Please enter a valid number");
+
+      var callbackForm = $("#callbackForm");
+      // callbackForm.validate({
+      //   submitHandler: function (form) {
+      //     return false;
+      //   },
+      //   errorContainer: $("div.form-error"),
+      //   errorLabelContainer: $("ol", $("div.form-error")),
+      //   wrapper: 'li',
+      //   errorClass: 'validation-error',
+      //   rules: {
+      //     phone: {
+      //       required: true,
+      //       phoneno: true,
+      //       minlength: 2,
+      //       maxlength: 20
+
+      //     }
+      //   },
+      //   messages: {
+
+      //     phone: {
+      //       required: 'Please enter your phone number',
+      //       maxlength: 'Please enter your name'
+      //     }
+      //   }
+      // });
+
+      $("#callback").click(function () {
+        // if (callbackForm.valid()) {
+          callbackSubmit();
+        // }
+      });
+
+      function callbackSubmit() {
+        $(".loading").html("<div class='inner'><p class='p'>Thanks for reaching out! Expect a call in a few.</p></div>");
+        //$(".status").html("");
+        $(".success-block").fadeIn();
+        var username = $("#username").val(),
+          phone = $("#phone").val(),
+          postData = {
+            "phone": phone,
+            "username": username
+          };
+        $.post('/manage/ajaxfunc.php?f=callback', postData, function (j) {
+          if (j.status == 1) {
+            $(".loading").html("<p class='p'>Thanks for reaching out! Expect a call in a few.</p>");
+            //$(".status").html(j.txt);
+            callbackForm[0].reset();
+            window.parent.$("#myModal").modal('hide');
+          }
+          else {
+            $(".loading").html("<p class='p'>Thanks for reaching out! Expect a call in a few.</p>");
+            //$(".status").html(j.txt);
+          }
+        }, 'json');
+      }
+    });
+
+      });
+      
+    </script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script> -->
+  </body>
+</html>
